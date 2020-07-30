@@ -22,7 +22,7 @@ val layout = LayoutInflater.from(mContext).inflate(R.layout.product_item, parent
 
         layout.setOnClickListener {
             var intentGo = Intent(context, MainActivity2::class.java)
-            intentGo.putExtra("id",position)
+            intentGo.putExtra("id",listProduct[position])
             context.startActivity(intentGo)
         }
 
