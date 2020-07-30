@@ -1,6 +1,7 @@
 package com.abilat01.listviewpersonal
 
 import android.content.Context
+import android.content.Intent
 import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +18,13 @@ val layout = LayoutInflater.from(mContext).inflate(R.layout.product_item, parent
 
         layout.tv_main.text = productIn.namber
         layout.tv_money.text = "$${productIn.precio}"
-        layout.imageView_main.setImageResource(productIn.image)
+        layout.imageView.setImageResource(productIn.image)
+
+        layout.setOnClickListener {
+            var intentGo = Intent(context, MainActivity2::class.java)
+            intentGo.putExtra("id",position)
+            context.startActivity(intentGo)
+        }
 
         return layout
     }

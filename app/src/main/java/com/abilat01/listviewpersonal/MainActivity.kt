@@ -10,12 +10,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val product = Product ("Компьютер", 150.0, "Комьпьютер 16RAM? 2GB", R.drawable.mac)
-        val product2 = Product ("Машина", 950.0, "Спортиный автомобиль", R.drawable.hqdefault)
+        val product2 = Product ("Машина", 950.0, "Спортиный автомобиль", R.drawable.executive)
 
         val listProduct = listOf(product, product2)
 
         val adapter = ProductAdapter(this, listProduct)
 
         list_view.adapter = adapter
+
+        list_view.setOnItemClickListener{parent, view, position, id ->
+
+        }
     }
 }

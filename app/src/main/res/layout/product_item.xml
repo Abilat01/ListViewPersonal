@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loyout_id"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -9,29 +10,36 @@
         android:id="@+id/tv_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="144dp"
         android:text="@string/comp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="124dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="218dp"
         android:text="@string/money"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tv_main"
-        tools:layout_editor_absoluteX="124dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
