@@ -12,8 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         val product = Product("Компьютер", 150.0, "Комьпьютер 16RAM? 2GB", R.drawable.mac)
         val product2 = Product("Машина", 950.0, "Спортиный автомобиль", R.drawable.executive)
+        val product3 = Product("Крутая машина", 950.0, "Спортиный автомобиль", R.drawable.hqdefault)
+        val product4 = Product("Крутой комп", 950.0, "Спортиный автомобиль", R.drawable.komp)
 
-        val listProduct = listOf(product, product2)
+        val listProduct = listOf(product, product2, product3, product4)
 
         val adapter = ProductAdapter(this, listProduct)
 
